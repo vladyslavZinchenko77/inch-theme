@@ -1,0 +1,33 @@
+{
+"name": "inch-theme",
+"version": "1.0.0",
+"description": "Shopify theme with Vite, Tailwind, Prettier and Husky",
+"main": "index.js",
+"scripts": {
+"dev": "vite",
+"build": "vite build",
+"lint": "prettier . --check",
+"format": "prettier . --write",
+"prepare": "husky install",
+"deploy": "shopify theme push",
+"start": "vite & shopify theme dev"
+},
+"keywords": ["shopify", "vite", "tailwind", "theme"],
+"author": "Твоё имя или ник",
+"license": "MIT",
+"devDependencies": {
+"autoprefixer": "^10.4.21",
+"husky": "^9.1.7",
+"lint-staged": "^16.0.0",
+"postcss": "^8.5.3",
+"prettier": "^3.5.3",
+"prettier-plugin-liquid": "^0.0.1-security",
+"tailwindcss": "^4.1.6",
+"vite": "^6.3.5"
+},
+"lint-staged": {
+"*.{js,jsx,ts,tsx,css,scss,md,json,liquid}": [
+"prettier --write"
+]
+}
+}
