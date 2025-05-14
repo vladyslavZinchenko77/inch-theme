@@ -9,8 +9,6 @@ export default {
     rollupOptions: {
       input: {
         theme: resolve(__dirname, 'src/scripts/layout/theme.js'),
-        index: resolve(__dirname, 'src/scripts/templates/index.js'),
-        product: resolve(__dirname, 'src/scripts/templates/product.js'),
       },
       output: {
         entryFileNames: 'template.[name].js',
